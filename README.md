@@ -10,8 +10,29 @@ Your URL shortener should include the following:
 * An endpoint to retrieve the top 10 most popular shortened domains in the past month
 * An endpoint to retrieve the number of times a shortened URL has been visited.
 
+## Technologies used: 
+* Frontend - React.js 
+* Backend - Node with Express Framework 
+
 ## Instructions
 
-1. Install the python environment using `pipenv install`.
-2. Run the pre-defined tests using `pipenv run test`.
-3. Implement the Django  views located in shortener/views.py to make tests pass and complete the shortener.
+Install dependencies Frontend
+1. change directory into client "cd client"
+2. type "npm install" to install dependencies 
+
+Install dependencies Backend
+1. change directory into api "cd api"
+2. type "npm install" to install dependencies  
+
+
+Run Frontned 
+1. change directory into client "cd client"
+2. run "npm start"
+
+Open a new terminal
+Run Backend 
+1. change directory into api "cd api"
+2. run "node index.js"
+
+
+

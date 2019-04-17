@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 class numberOfVisits extends React.Component {
 
   render(){
