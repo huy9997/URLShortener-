@@ -1,25 +1,25 @@
 const express = require('express');
 const router  = express.Router();
 const randomstring = require("randomstring");
-const fs = require('fs')l;
+const fs = require('fs');
 let date =  new Date();
 
 let URLObject ={
-  URL: URLShorten,
+  URLShortened: this.URLShortened,
+  URL: this.URL,
   Date: date,
-  NumberOfVisits: visitis
+  NumberOfVisits: this.NumberOfVisits
 }
 
-let urlFunction = (URL,visits)=>{
-  new URLObject={
-    URL: randomstring(5),
-    Date:date,
-    NumberOfVisits:visits
-  }
+let shortenURL = (URL,visits)=>{
+  
 }
 //number of visits count ++ when onClick 
 
 router.get('/', function (req, res){
+  shortenURL(req.body)=()=>{
+    
+  }
   res.send('hello world ');
 });
 

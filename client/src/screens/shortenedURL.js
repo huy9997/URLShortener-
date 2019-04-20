@@ -1,12 +1,27 @@
 import React from 'react'
-import Button from '@material-ui/core/Button';class shortenedURL extends React.Component {
+import Button from '@material-ui/core/Button';
+import Input from '@material-ui/core/Input';
+import styled from 'styled-components'
 
+const container = styled.div`
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+`;
+
+class shortenedURL extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputURL: '',
+    }
+  }
   render(){
     return(
-      <div>
-        <Button> 
-        </Button>
-      </div>
+      <container>
+        <Input></Input>
+        <Button>Submit</Button>
+      </container>
     );
   }
 }
