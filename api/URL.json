@@ -1,0 +1,23 @@
+{
+"URL":[
+  {
+    "URLShortened": "",
+    URL: ,
+    Date: date,
+    NumberOfVisits: this.NumberOfVisits},
+  {"firstName":"Anna", "lastName":"Smith"},
+  {"firstName":"Peter", "lastName":"Jones"}
+]
+}
+
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
