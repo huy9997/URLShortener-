@@ -10,14 +10,12 @@ const Contain = styled.div`
   align-items:center;
 `;
 class shortenedURL extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      inputURL: ''
+      inputURL:''
     }
   }
-  
   handleChange = e => {
     this.setState({
       [e.target.name] : e.target.value
@@ -25,8 +23,9 @@ class shortenedURL extends React.Component {
    }
   handleSubmit = event => {
     event.preventDefault();
-    console.log(event);
-      axios.post('/api/shortenedURL', {
+    console.log('state of input '+this.state.inputURL);
+      
+      axios.post('/api/shortenedURL/post', {
         urlData: this.state.inputURL
       })
       .then(function (response) {
@@ -39,7 +38,7 @@ class shortenedURL extends React.Component {
   render(){
     return(
       <Contain>
-        <Input onChange={this.handleChange} placeholder="Enter URL"></Input>
+        <Input name="inputURL" onChange={this.handleChange} placeholder="Enter URL"></Input>
         <Button onClick={this.handleSubmit}>Submit</Button>
       </Contain>
     );

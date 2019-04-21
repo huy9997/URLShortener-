@@ -1,10 +1,10 @@
 import React from  'react'
 import {Route,BrowserRouter } from 'react-router-dom'
 
-import lastHundredURL from '../screens/lastHundredURL'
-import numberOfVisits from  '../screens/numberOfVisits'
-import shortenedURL from '../screens/shortenedURL'
-import topTenURL from '../screens/topTenURL'
+import lastHundredURL from '../screens/lastHundredURLScreen'
+import numberOfVisits from  '../screens/numberOfVisitsScreen'
+import shortenedURL from '../screens/shortenedURLScreen'
+import topTenURL from '../screens/topTenURLScreen'
 
 const Routes =()=>(
   <BrowserRouter>
